@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Job Application</title>
+</head>
+<body>
+
+<h2>Job Application</h2>
+    <form name="input" action="html_form_action.asp" method="post"> Computer Enginner for Frank's Company </form><br>
+
+    <fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			First name: <input type="text" name="firstname"><br>
+		</div>
+		<div class="field">
+			Last name: <input type="text" name="lastname">
+		</div>
+		<div class="field">
+			Password: <input type="password" name="pwd">
+		</div>
+    </fieldset><br>
+
+    <fieldset>
+		<legend>Job Related Information</legend>
+		<div class="field">
+			<textarea name="essay">Please tell us about your previous career</textarea>
+		</div>
+		<div class="field">
+            <label>Preffered work at home:</label> 
+            <input type="radio" name="answer" value="yes"> Yes <input type="radio" name="answer" value="no"> No<br>
+            I preffer to work <select name="Work Duration"> <option value="7 days a week">7 days a week</option> <option value="6 days a week">6 days a week</option> <option value="5 days a week">5 days a week</option> </select>
+		</div>
+		<div class="field">
+            <input type="checkbox" name="Language" value="English">I can speak English fluently
+            <input type="checkbox" name="Language" value="Secondary">I can speak at least one of following Languages
+            <select name="Language" size="4" multiple> <option value="Chinese">Chinese</option> <option value="French">French</option> <option value="Japanese">Japanses</option> <option value="Spanish">Spanish</option> </select>
+
+		</div>
+    </fieldset><br>
+
+<input type="submit" value="Submit form">
+
+</form>
+</body>
+</html>
